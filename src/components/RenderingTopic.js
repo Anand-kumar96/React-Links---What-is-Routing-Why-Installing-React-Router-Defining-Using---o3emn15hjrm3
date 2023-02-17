@@ -3,13 +3,11 @@ import { useHistory } from 'react-router-dom';
 
 const RenderingTopic = () => {
   const history = useHistory();
-  const backHandle = () => {
-    history.goBack();
-  }
+
   return (
     <div id="rendering-div">
       <h3>Rendering in React</h3>
-      <button id="rendering-back-button" onClick={backHandle}>
+      <button onClick={history.goBack} id="rendering-back-button">
         Back
       </button>
     </div>
